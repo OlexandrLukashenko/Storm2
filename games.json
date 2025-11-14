@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Cyberpunk 2077",
     "price": 899,
-    "thumb": "https://cdn.wallpapersafari.com/52/2/OI+N3U.jpg",
+    "thumb": "https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/12aaa3b137a18e180bb92682e8f81674dcb7451f-1280x720.jpg",
     "description": "RPG від CDPR",
     "category": "RPG",
     "popularity": 90
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "GTA V",
     "price": 499,
-    "thumb": "https://wallpaperaccess.com/full/190815.jpg",
+    "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/4c8d7ce5142a528bdac68c093bd1bcc720e2baee/capsule_616x353.jpg?t=1753974947",
     "description": "Екшен",
     "category": "Action",
     "popularity": 100
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Elden Ring",
     "price": 1199,
-    "thumb": "https://wallpaper.dog/large/20577127.jpg",
+    "thumb": "https://nintenduo.com/wp-content/uploads/2025/08/Elden-Ring-Cover.webp",
     "description": "Souls RPG",
     "category": "RPG",
     "popularity": 95
