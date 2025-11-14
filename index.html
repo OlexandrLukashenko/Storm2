@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>STROM — магазин ігор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">Strom</div>
+  <div class="controls">
+    <input id="search" placeholder="Пошук ігор..." />
+    <select id="sort">
+      <option value="popular">За популярністю</option>
+      <option value="price-asc">Ціна ↑</option>
+      <option value="price-desc">Ціна ↓</option>
+      <option value="name">Назва</option>
+    </select>
+    <button id="themeToggle" class="btn">🌙</button>
+    <a href="profile.html" class="btn ghost">Профіль</a>
+    <a href="admin.html" class="btn ghost">Адмін</a>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="filters">
+    <h3>Категорії</h3>
+    <div id="genres" class="tag-box"></div>
+  </aside>
+
+  <section class="catalog">
+    <div id="store" class="store-grid"></div>
+  </section>
+
+  <aside class="cart-panel">
+    <h3>Кошик</h3>
+    <div id="cartList"></div>
+    <div class="cart-footer">
+      <div>Усього: <span id="cartTotal">0 грн</span></div>
+      <button id="checkout" class="btn">Оформити</button>
+    </div>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

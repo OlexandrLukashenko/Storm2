@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Адмін панель — Strom</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .admin-form{max-width:600px;}
+    .game-row{display:flex;gap:12px;align-items:center;border-bottom:1px solid rgba(255,255,255,0.04);padding:8px 0}
+    .game-row img{width:80px;height:50px;object-fit:cover;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="logo">Strom — Admin</div></header>
+
+  <main style="padding:20px;max-width:1100px;margin:auto">
+    <section class="admin-form">
+      <h2>Додати / Редагувати гру</h2>
+      <input id="title" placeholder="Назва"><br>
+      <input id="price" type="number" placeholder="Ціна"><br>
+      <input id="thumb" placeholder="URL картинки"><br>
+      <input id="category" placeholder="Категорія (RPG, Action...)"><br>
+      <textarea id="desc" placeholder="Опис"></textarea><br>
+      <button id="save" class="btn">Зберегти</button>
+      <button id="clear" class="btn ghost">Очистити</button>
+    </section>
+
+    <h2 style="margin-top:24px">Список ігор</h2>
+    <div id="list"></div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

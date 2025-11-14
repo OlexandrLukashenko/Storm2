@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Профіль — Strom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Strom</div>
+    <nav>
+      <a href="index.html">Каталог</a>
+      <a href="profile.html" class="active">Профіль</a>
+      <button id="logoutBtn" class="btn ghost">Вийти</button>
+    </nav>
+  </header>
+
+  <main class="profile-layout">
+    <section class="profile-card">
+      <h2>Мій профіль</h2>
+      <label>Нік</label>
+      <input id="username" type="text" />
+      <label>Email</label>
+      <input id="email" type="email" />
+      <div class="row">
+        <button id="saveProfile" class="btn">Зберегти</button>
+      </div>
+    </section>
+
+    <section class="orders-card">
+      <h2>Історія покупок</h2>
+      <div id="ordersList" class="orders-list"></div>
+    </section>
+  </main>
+
+<script src="profile.js"></script>
+</body>
+</html>
