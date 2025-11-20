@@ -98,4 +98,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Чтобы футер всегда был внизу */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер основного контента */
+.main-content {
+    flex: 1;
+}
 
