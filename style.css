@@ -39,43 +39,63 @@ body{margin:0;font-family:Inter,Segoe UI,Arial;background:var(--bg);color:var(--
 .orders-list{display:flex;flex-direction:column;gap:12px}
 .order{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
 input, textarea{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);margin-top:6px}
+/* Футер */
 .footer {
-  margin-top: 50px;
-  padding: 30px 20px;
-  background: #071026;
-  color: #b9c7d6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: #0d1117;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: auto;
+    border-top: 1px solid #1f2937;
 }
 
-.footer-menu {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  font-size: 14px;
+.footer-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-menu a {
-  color: #d4e3f3;
-  cursor: pointer;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 17px;
 }
 
-.footer-icons {
-  display: flex;
-  gap: 12px;
+.footer-menu a:hover {
+    color: #22c55e;
 }
 
-.footer-icons .icon {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #4caf50;
-  color: #4caf50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 13px;
-  font-weight: bold;
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.circle {
+    border: 1px solid #22c55e;
+    padding: 8px 12px;
+    border-radius: 50%;
+    color: #22c55e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.circle:hover {
+    background: #22c55e;
+    color: #0d1117;
+}
+
+/* Чтобы футер всегда был снизу страницы */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
