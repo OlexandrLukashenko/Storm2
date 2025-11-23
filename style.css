@@ -115,3 +115,126 @@ body {
     flex: 1;
 }
 
+/* =========================================
+   АДАПТИВНАЯ ОПТИМИЗАЦИЯ ПОД ВСЕ ТЕЛЕФОНЫ
+   ========================================= */
+
+/* Глобальное улучшение шрифтов */
+body, input, button {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* ----- Телефоны < 480px ----- */
+@media(max-width: 480px){
+    .topbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .controls {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .controls input, .controls select {
+        width: 100%;
+    }
+
+    /* Сетка магазина */
+    .store-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+
+    .thumb {
+        height: 120px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .filters, .cart-panel {
+        display: none; /* скрываем боковые панели на телефонах */
+    }
+
+    .catalog {
+        padding: 0;
+    }
+
+    /* Профиль */
+    .profile-layout {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .profile-card, .orders-card {
+        padding: 14px;
+    }
+
+    /* Футер */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* ----- Телефоны 480–768px (средние) ----- */
+@media(max-width: 768px){
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .cart-panel {
+        order: 3;
+    }
+
+    .filters {
+        order: 1;
+    }
+
+    .catalog {
+        order: 2;
+    }
+
+    .store-grid {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    }
+
+    .controls {
+        flex-wrap: wrap;
+    }
+
+    header .btn.ghost {
+        padding: 6px 8px;
+    }
+
+    .footer-menu a {
+        margin-right: 15px;
+    }
+}
+
+/* ----- Большие телефоны и планшеты 768–1024px ----- */
+@media(max-width: 1024px){
+    .layout {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .cart-panel {
+        display: none;
+    }
+}
+
+/* Улучшение производительности изображения */
+.thumb {
+    background-size: cover;
+    background-position: center;
+    image-rendering: -webkit-optimize-contrast;
+}
+
